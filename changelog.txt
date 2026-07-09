@@ -1,8 +1,10 @@
 10/07/2026 : Work on Database architecture
-   Modified Utilisateur class :
-    - Added Name column
-    - Added Language column
-   Added Categorie class :
+Modified Utilisateur class :
+   - Added Name column
+   - Added Language column
+Added Categorie class :
     - Added id column
     - Added name column
-  Added selected categories for each interest filters
+Added pre defined categories for each interest filters
+Added predefined languages categories for Language column
+ 
