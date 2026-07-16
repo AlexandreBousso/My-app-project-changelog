@@ -7,4 +7,5 @@ Added Categorie class :
     - Added name column
 Added pre defined categories for each interest filters
 Added predefined languages categories for Language column
- 
+
+14/07/2026 : Migration of all new tables with Alembic
