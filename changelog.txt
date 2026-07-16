@@ -12,3 +12,16 @@ Added pre defined categories for each interest filters
 Added predefined languages categories for Language column
 
 14/07/2026 : Migration of all new tables with Alembic
+
+alembic revision --autogenerate -m "Nom" // to set up table changes
+alembic alembic upgrade head  // to push
+issues with language database recognition
+
+remaking table with:
+   DROP TABLE alembic_version;
+   DROP SCHEMA public CASCADE;
+   CREATE SCHEMA public;
+   CREATE EXTENSION postgis;
+
+had an issue with nom_cn not recognized as a column, had to make sure to clean pycaches
+Sucessfully migrated all my tables
