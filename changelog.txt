@@ -1,4 +1,7 @@
+Work PostgreSQL database
+
 10/07/2026 : Work on Database architecture
+In seed.py
 Modified Utilisateur class :
    - Added Name column
    - Added Language column
