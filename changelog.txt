@@ -30,3 +30,17 @@ Sucessfully migrated all my tables
 Cleaned tables with TRUNCATE TABLE categorie, sous_categorie, interet, utilisateur_interet CASCADE;
 Repushing with python seed.py
 Installed flutter dependencies for project
+
+
+17/07/2026 : Learning the concept of tiles used for web map
+Map is divided according to a value named Z, the coordinate of a point is (Z):(x,y) with x,y goes from 0 to 2 Z²-1. 
+Z=0, whole world map
+Z=1, divided in 4
+Z=2, divided in 16 (divided each Z=1 square in 4)
+Z=3, divided in 64
+.
+.
+.
+Z=18, street level, divided in 262 143
+Index min = 0
+Index max = 2Z² - 1
