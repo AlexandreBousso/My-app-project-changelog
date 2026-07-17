@@ -28,3 +28,4 @@ Sucessfully migrated all my tables
 
 15/07/2026 : Created duplicates of tables after pushing several times
 Cleaned tables with TRUNCATE TABLE categorie, sous_categorie, interet, utilisateur_interet CASCADE;
+Repushing with python seed.py
