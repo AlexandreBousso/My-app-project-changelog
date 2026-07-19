@@ -44,3 +44,8 @@ Z=3, divided in 64
 Z=18, street level, divided in 262 143
 Index min = 0
 Index max = 2Z² - 1
+
+
+19/07/2026 : Worked on the map functionnality
+Added visible radius around the user point.
+Added slider to increases the radius.
