@@ -49,3 +49,8 @@ Index max = 2Z² - 1
 19/07/2026 : Worked on the map functionnality
 Added visible radius around the user point.
 Added slider to increases the radius.
+
+21/07/2026: Created Blocage class for the map to hide display of some users
+
+Created Signalement class for modration (reason and datetime of reports)
+Created Banned class to have the list of banned users(with reason and date time)
