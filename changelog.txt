@@ -54,3 +54,40 @@ Added slider to increases the radius.
 
 Created Signalement class for modration (reason and datetime of reports)
 Created Banned class to have the list of banned users(with reason and date time)
+
+03/08/2026 : Modified Bannir_utilisateur and Signalement_Utilisateur function 
+┌───────────────────────────────┐
+                  │ 1. signalement_utilisateur()  │
+                  └──────────────┬────────────────┘
+                                 │
+                   (Ajout des points de report)
+                                 │
+                                 ▼
+                    Seuil de 15 pts atteint ?
+                   /                         \
+            [ OUI ]                           [ NON ]
+               │                                 │
+               ▼                                 ▼
+┌─────────────────────────────┐        (Signalement enregistré,
+│ 2. bannir_utilisateur()     │         rien de plus ne se passe)
+└──────────────┬──────────────┘
+               │
+   ┌───────────┴───────────┐
+   │                       │
+   ▼                       ▼
+Bannissement        Utilisateur
+(Enregistre         est_actif = False
+ l'historique)      (Bascule le statut)
+                           │
+                           ▼
+              ┌─────────────────────────┐
+              │ 3. Tentative de LOGIN   │
+              └────────────┬────────────┘
+                           │
+                 est_actif == False ?
+                /                    \
+         [ OUI ]                      [ NON ]
+            │                            │
+            ▼                            ▼
+  ❌ "Accès refusé :           ✅ "Connexion autorisée"
+   compte suspendu"
