@@ -97,4 +97,4 @@ Created event_services.py files to handle event creation. Planning to add func e
 Difference in code db.query(...) : 
    -Renvoie None si introuvable
    - Needs verification
-   -  Basically for intern/personnalised request that happens one time or so not for a sustainable code
+   -  Basically for intern/personnalised request with no services function (needing a combination of many filters)
