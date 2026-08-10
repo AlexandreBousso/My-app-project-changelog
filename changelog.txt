@@ -93,3 +93,8 @@ Bannissement        Utilisateur
    compte suspendu"
 07/07/2026 : Created Event class in database
 Created event_services.py files to handle event creation. Planning to add func editevent and participate event
+
+Difference in code db.query(...) : 
+   -Renvoie None si introuvable
+   - Needs verification
+   -  Basically for intern/personnalised request that happens one time or so not for a sustainable code
