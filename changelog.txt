@@ -91,7 +91,13 @@ Bannissement        Utilisateur
             ▼                            ▼
   ❌ "Accès refusé :           ✅ "Connexion autorisée"
    compte suspendu"
-07/07/2026 : Created Event class in database
+07/08/2026 : Created Event class in database
 Created event_services.py files to handle event creation. 
 Wrote create_event function
 Wrote edit_event function
+
+18/08/2026 and before : 
+- Optimised create_event and edit_event functions
+- Modified databases classes and added many-to-many relationship between tables
+- Added join_event, leave_event, get_event, remove_participants functions
+- Added promote_user function (Need some editing still)
