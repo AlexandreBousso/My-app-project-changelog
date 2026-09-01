@@ -101,3 +101,6 @@ Wrote edit_event function
 - Modified databases classes and added many-to-many relationship between tables
 - Added join_event, leave_event, get_event, remove_participants functions
 - Added promote_user function (Need some editing still)
+
+01/09/2026 :
+Created create event UI page. Made some size adjustement. Need to Link it with real API + adding a chat + adding "Invite" element
